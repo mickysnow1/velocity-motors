@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Velocity Motors - Drive Innovation</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Ctext y='.9em' font-size='90'%3E🚗%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a href="#main" class="sr-only">Skip to content</a>
+  <header>
+    <div class="container">
+      <h1 class="logo">Velocity Motors</h1>
+      <nav role="navigation" aria-label="Main navigation">
+        <ul>
+          <li><a href="#home" class="active" aria-current="page">Home</a></li>
+          <li><a href="#models">Models</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="#" id="dynamicContentLink">News</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main id="main">
+    <section id="home" class="hero">
+      <div class="hero-content">
+        <h1>Experience Driving Redefined.</h1>
+        <p>Innovative design, exhilarating performance, sustainable future.</p>
+        <a href="#models" class="btn">Explore Models</a>
+      </div>
+    </section>
+    <section id="models" class="models-showcase container">
+      <h2>Our Latest Models</h2>
+      <div class="model-grid">
+        <article class="model-card" data-model="Aurora">
+          <img src="https://source.unsplash.com/400x200/?electric-car,modern" alt="Velocity Aurora Electric Sedan" loading="lazy">
+          <div class="model-info">
+            <h3>Velocity Aurora</h3>
+            <p>A silent revolution in luxury electric sedans.</p>
+            <button class="btn-small" data-action="view-details" data-model="Aurora">View Details</button>
+          </div>
+        </article>
+        <article class="model-card" data-model="Specter">
+          <img src="https://source.unsplash.com/400x200/?sports-car,fast" alt="Velocity Specter Sports Coupe" loading="lazy">
+          <div class="model-info">
+            <h3>Velocity Specter</h3>
+            <p>Unleash the beast. Pure adrenaline on four wheels.</p>
+            <button class="btn-small" data-action="view-details" data-model="Specter">View Details</button>
+          </div>
+        </article>
+        <article class="model-card" data-model="Horizon">
+          <img src="https://source.unsplash.com/400x200/?suv,luxury" alt="Velocity Horizon Luxury SUV" loading="lazy">
+          <div class="model-info">
+            <h3>Velocity Horizon</h3>
+            <p>Conquer any terrain with unparalleled comfort.</p>
+            <button class="btn-small" data-action="view-details" data-model="Horizon">View Details</button>
+          </div>
+        </article>
+      </div>
+    </section>
+    <section id="features" class="features-section container">
+      <h2>Key Innovations</h2>
+      <div class="features-list">
+        <article class="feature-item">
+          <h3>Adaptive AI Driving</h3>
+          <p>Our intelligent system learns your driving style for optimal performance and safety.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Sustainable Materials</h3>
+          <p>Crafted with recycled and ethically sourced materials for a greener footprint.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Seamless Connectivity</h3>
+          <p>Integrated infotainment and smart home control at your fingertips.</p>
+        </article>
+        <article class="feature-item">
+          <h3>Rapid Charging</h3>
+          <p>Get back on the road faster with our advanced battery technology.</p>
+        </article>
+      </div>
+    </section>
+    <section id="contact" class="contact-section container">
+      <h2>Contact Us</h2>
+      <div class="contact-form">
+        <form id="inquiryForm" action="/submit" method="POST">
+          <div class="form-group">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required placeholder="Your full name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+          </div>
+          <div class="form-group">
+            <label for="modelInterest">Interested Model:</label>
+            <select id="modelInterest" name="modelInterest">
+              <option value="">-- Select a model --</option>
+              <option value="Aurora">Aurora</option>
+              <option value="Specter">Specter</option>
+              <option value="Horizon">Horizon</option>
+              <option value="General">General Inquiry</option>
+            </select>
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Tell us how we can help you..."></textarea>
+          </div>
+          <div class="form-group">
+            <button type="submit">Send Inquiry</button>
+          </div>
+          <div id="formStatus" class="form-message" role="alert" style="display:none;"></div>
+        </form>
+      </div>
+    </section>
+    <section id="dynamic-content-area" class="container">
+      <h3>Latest News & Updates</h3>
+      <p>Click the 'News' link in the navigation to load dynamic content!</p>
+    </section>
+  </main>
+  <footer>
+    <div class="container">
+      <p>&copy; 2023 Velocity Motors. All rights reserved.</p>
+      <p>Designed with <a href="https://source.unsplash.com" target="_blank">Unsplash Images</a> for educational purposes.</p>
+    </div>
+  </footer>
+  <script src="scripts.js" defer></script>
+</body>
+</html>
